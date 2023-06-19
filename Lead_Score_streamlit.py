@@ -152,9 +152,9 @@ features_df  = pd.DataFrame([features])
 
 if st.button('Predict'):
     prediction = predict_conversion(model, features_df)
-    score0 = prediction['Score_0'][0]
-    score1 = prediction['Score_1'][0]
-    conversion = prediction['Label'][0]
+    score0 = prediction['prediction_score_0'][0]
+    score1 = prediction['prediction_score_1'][0]
+    conversion = prediction['prediction_label'][0]
     if int(conversion)==1:
         st.write('Based on feature values, the lead will lead to conversion!')
     elif int(conversion)==0:
