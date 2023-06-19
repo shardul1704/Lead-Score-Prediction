@@ -159,7 +159,6 @@ if st.button('Predict'):
         st.write('Based on feature values, the lead will lead to conversion!')
     elif int(conversion)==0:
         st.write('Based on feature values, the lead will NOT lead to conversion!')
-    st.write('Based on feature values,\n")
     st.write('There is a '+str(score1*100)+'% chances that the lead will lead to conversion!')
     st.write('There is a '+str(score0*100)+'% chances that the lead will NOT lead to conversion!')
 
