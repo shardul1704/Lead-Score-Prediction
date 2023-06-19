@@ -156,12 +156,12 @@ if st.button('Predict'):
     score1 = prediction['Score_1'][0]
     conversion = prediction['Label'][0]
     if int(conversion)==1:
-        st.write('Based on feature values, the lead will lead to conversion!\n ')
+        st.write('Based on feature values, the lead will lead to conversion!')
     elif int(conversion)==0:
-        st.write('Based on feature values, the lead will NOT lead to conversion!\n ')
+        st.write('Based on feature values, the lead will NOT lead to conversion!')
     st.write('Based on feature values,\n")
-    st.write('There is a '+str(score1*100)+'% chances that the lead will lead to conversion!\n')
-    st.write('There is a '+str(score0*100)+'% chances that the lead will NOT lead to conversion!\n')
+    st.write('There is a '+str(score1*100)+'% chances that the lead will lead to conversion!')
+    st.write('There is a '+str(score0*100)+'% chances that the lead will NOT lead to conversion!')
 
 
 
