@@ -152,4 +152,17 @@ features_df  = pd.DataFrame([features])
 
 if st.button('Predict'):
     prediction = predict_conversion(model, features_df)
-    st.write(' Based on feature values, your Lead Score is '+ str(prediction))
+    score0 = prediction['Score_0'][0]
+    score1 = prediction['Score_1'][0]
+    conversion = prediction['Label'][0]
+    if int(conversion)==1:
+        st.write('Based on feature values, the lead will lead to conversion!\n ')
+    elif int(conversion)==0:
+        st.write('Based on feature values, the lead will NOT lead to conversion!\n ')
+    st.write('Based on feature values,\n")
+    st.write('There is a '+str(score1*100)+'% chances that the lead will lead to conversion!\n')
+    st.write('There is a '+str(score0*100)+'% chances that the lead will NOT lead to conversion!\n')
+
+
+
+
