@@ -13,10 +13,17 @@ model = load_model('Lead_score_lightgbm_model')
 
 
 st.title('Lead Score Prediction Web App')
-st.write('This is a web app to classify the quality of your wine based on\
-         several features that you can see in the sidebar. Please adjust the\
-         value of each feature. After that, click on the Predict button at the bottom to\
-         see the prediction of the classifier.')
+st.write('Our web app is an intelligent tool designed to calculate lead scores\
+        for potential customers based on their activity attributes and intentions.\
+        By utilizing advanced machine learning techniques,\
+        we have developed a model that aims to maximize profits.\
+        The lead scoring process involves analyzing various customer activities,\
+        such as website visits, email interactions, social media engagement, and more.\
+        By considering these activities alongside their expressed intentions,\
+        our model assigns a score that indicates the likelihood of a customer converting\
+        into a paying customer or making a significant purchase.\
+        This powerful tool empowers businesses to prioritize and focus their efforts on high-scoring leads,\
+        ultimately optimizing their sales and marketing strategies to increase revenue and drive profitability.')
 
 
 lead_origin = ('API','Landing Page Submission','Lead Add Form','Lead Import','Quick Add Form')
